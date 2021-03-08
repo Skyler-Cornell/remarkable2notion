@@ -1,7 +1,8 @@
 import pysftp
 import os
 import subprocess
-from rm_2_pdf import rm2pdf_convert
+
+from utilities.rm_2_pdf import rm2pdf_convert
 
 def main():
     # HOST = '10.11.99.1'
@@ -9,7 +10,7 @@ def main():
     # USERNAME = 'root'
     # PASSWORD = 'fPsUJe8rQx'
     # cwd = os.getcwd()
-    rm2pdf_convert('test_files/f9299a23-adbf-4561-b14a-c57c161243de', 'my_test.pdf', 'A4.pdf')
+    rm2pdf_convert('rm_bundles/f9299a23-adbf-4561-b14a-c57c161243de', 'generated_pdfs/generated.pdf', 'pdf_templates/A4.pdf')
     # with pysftp.Connection(host=HOST, username=USERNAME, password=PASSWORD) as sftp:
     #     print("sucessful connection")
     #     #sftp.get_r('.local/share/remarkable/xochitl/f9299a23-adbf-4561-b14a-c57c161243de',cwd)
