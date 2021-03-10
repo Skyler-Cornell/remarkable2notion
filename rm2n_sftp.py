@@ -21,6 +21,4 @@ def main():
         #sftp.get('.local/share/remarkable/xochitl/f9299a23-adbf-4561-b14a-c57c161243de.metadata')
 
 
-
-
 main()
